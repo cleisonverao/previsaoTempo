@@ -1,0 +1,47 @@
+.container{
+    flex: 2;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    h3{
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+}
+.itemList{
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+padding: 5px;
+}
+.item{
+text-align: center;
+background-color: #ccedf5;
+border-radius: 10px;
+padding: 10px;
+}
+.day, .description{
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.min{
+    color: aqua;
+}
+.max{
+    color: red;
+}
+@media only screen and (max-width: 390px) {
+    .itemList{
+       display: flex;
+       flex-direction: column;
+      
+        }
+        .item{
+    width: 100%;
+    margin-bottom: 10px;
+        }
+        .clearfix{
+            height: 300px;
+        }
+  }
